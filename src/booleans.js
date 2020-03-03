@@ -1,61 +1,173 @@
 const negate = a => {
-  // your code here
+  return !a;
 };
 
 const both = (a, b) => {
-  // your code here
+  let result;
+
+  if (a && b) {
+    result = true;
+  } else {
+    result = false;
+  }
+
+  return result;
 };
 
 const either = (a, b) => {
-  // your code here
+  let result;
+
+  if (a || b) {
+    result = true;
+  } else {
+    result = false;
+  }
+
+  return result;
 };
 
 const none = (a, b) => {
-  // your code here
+  let result;
+
+  if (!a && !b) {
+    result = true;
+  } else {
+    result = false;
+  }
+
+  return result;
 };
 
 const one = (a, b) => {
-  // your code here
+  let result;
+
+  if (a && b) {
+    result = false;
+  } else if (!a && !b) {
+    result = false;
+  } else {
+    result = true;
+  }
+
+  return result;
 };
 
 const truthiness = a => {
-  // your code here
+  let result;
+
+  if (a) {
+    result = true;
+  } else {
+    result = false;
+  }
+
+  return result;
 };
 
 const isEqual = (a, b) => {
-  // your code here
+  let result;
+
+  if (a === b) {
+    result = true;
+  } else {
+    result = false;
+  }
+
+  return result;
 };
 
 const isGreaterThan = (a, b) => {
-  // your code here
+  let result;
+
+  if (a > b) {
+    result = true;
+  } else {
+    result = false;
+  }
+
+  return result;
 };
 
 const isLessThanOrEqualTo = (a, b) => {
-  // your code here
+  let result;
+
+  if (a <= b) {
+    result = true;
+  } else {
+    result = false;
+  }
+
+  return result;
 };
 
 const isOdd = a => {
-  // your code here
+  let result;
+
+  if (a % 2) {
+    result = true;
+  } else {
+    result = false;
+  }
+  return result;
 };
 
 const isEven = a => {
-  // your code here
+  let result;
+
+  if (a % 2 === 0) {
+    result = true;
+  } else {
+    result = false;
+  }
+  return result;
 };
 
 const isSquare = a => {
-  // your code here
+  let result;
+
+  if (Math.sqrt(a) % 1 === 0) {
+    result = true;
+  } else {
+    result = false;
+  }
+
+  return result;
 };
 
 const startsWith = (char, string) => {
-  // your code here
+  let result;
+
+  if (string.charAt(0) === char) {
+    result = true;
+  } else {
+    result = false;
+  }
+
+  return result;
 };
 
 const containsVowels = string => {
-  // your code here
+  let result;
+
+  if (string.match(/[aeiou]/gi)) {
+    result = true;
+  } else {
+    result = false;
+  }
+
+  return result;
 };
 
 const isLowerCase = string => {
-  // your code here
+  let result;
+
+  if (string === string.toLowerCase()) {
+    result = true;
+  } else {
+    result = false;
+  }
+
+  return result;
 };
 
 module.exports = {
