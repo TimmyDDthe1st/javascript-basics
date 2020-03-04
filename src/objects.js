@@ -1,5 +1,5 @@
 const createPerson = (name, age) => {
-  return createPerson();
+  return { name, age };
 };
 
 const getName = object => {
@@ -46,8 +46,8 @@ const createTalkingPerson = (name, age) => {
   const person = {
     name,
     age,
-    introduce: (name) {
-      return `Hi ${name}, my name is Bill and I am ${age}`;
+    introduce: name => {
+      return `Hi ${name}, my name is Bill and I am ${age}!`;
     }
   };
 
