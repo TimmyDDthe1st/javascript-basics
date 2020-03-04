@@ -112,14 +112,14 @@ const isOdd = a => {
 };
 
 const isEven = a => {
-  let result;
+  // let result;
 
   if (a % 2 === 0) {
-    result = true;
-  } else {
-    result = false;
+    return true;
   }
-  return result;
+  return false;
+
+  // return result;
 };
 
 const isSquare = a => {
@@ -147,27 +147,11 @@ const startsWith = (char, string) => {
 };
 
 const containsVowels = string => {
-  let result;
-
-  if (string.match(/[aeiou]/gi)) {
-    result = true;
-  } else {
-    result = false;
-  }
-
-  return result;
+  return !!string.match(/[aeiou]/gi);
 };
 
 const isLowerCase = string => {
-  let result;
-
-  if (string === string.toLowerCase()) {
-    result = true;
-  } else {
-    result = false;
-  }
-
-  return result;
+  return string === string.toLowerCase();
 };
 
 module.exports = {
