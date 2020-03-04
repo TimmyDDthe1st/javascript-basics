@@ -3,147 +3,57 @@ const negate = a => {
 };
 
 const both = (a, b) => {
-  let result;
-
-  if (a && b) {
-    result = true;
-  } else {
-    result = false;
-  }
-
-  return result;
+  return a && b;
 };
 
 const either = (a, b) => {
-  let result;
-
-  if (a || b) {
-    result = true;
-  } else {
-    result = false;
-  }
-
-  return result;
+  return a || b;
 };
 
 const none = (a, b) => {
-  let result;
-
   if (!a && !b) {
-    result = true;
-  } else {
-    result = false;
-  }
-
-  return result;
-};
-
-const one = (a, b) => {
-  let result;
-
-  if (a && b) {
-    result = false;
-  } else if (!a && !b) {
-    result = false;
-  } else {
-    result = true;
-  }
-
-  return result;
-};
-
-const truthiness = a => {
-  let result;
-
-  if (a) {
-    result = true;
-  } else {
-    result = false;
-  }
-
-  return result;
-};
-
-const isEqual = (a, b) => {
-  let result;
-
-  if (a === b) {
-    result = true;
-  } else {
-    result = false;
-  }
-
-  return result;
-};
-
-const isGreaterThan = (a, b) => {
-  let result;
-
-  if (a > b) {
-    result = true;
-  } else {
-    result = false;
-  }
-
-  return result;
-};
-
-const isLessThanOrEqualTo = (a, b) => {
-  let result;
-
-  if (a <= b) {
-    result = true;
-  } else {
-    result = false;
-  }
-
-  return result;
-};
-
-const isOdd = a => {
-  let result;
-
-  if (a % 2) {
-    result = true;
-  } else {
-    result = false;
-  }
-  return result;
-};
-
-const isEven = a => {
-  // let result;
-
-  if (a % 2 === 0) {
     return true;
   }
   return false;
+};
 
-  // return result;
+const one = (a, b) => {
+  return a != b;
+};
+
+const truthiness = a => {
+  if (a) {
+    return true;
+  }
+  return false;
+};
+
+const isEqual = (a, b) => {
+  return a == b;
+};
+
+const isGreaterThan = (a, b) => {
+  return a > b;
+};
+
+const isLessThanOrEqualTo = (a, b) => {
+  return a <= b;
+};
+
+const isOdd = a => {
+  return a % 2 != 0;
+};
+
+const isEven = a => {
+  return a % 2 == 0;
 };
 
 const isSquare = a => {
-  let result;
-
-  if (Math.sqrt(a) % 1 === 0) {
-    result = true;
-  } else {
-    result = false;
-  }
-
-  return result;
+  return Math.sqrt(a) % 1 === 0;
 };
 
 const startsWith = (char, string) => {
-  let result;
-
-  if (string.charAt(0) === char) {
-    result = true;
-  } else {
-    result = false;
-  }
-
-  return result;
+  return string.charAt(0) === "a";
 };
 
 const containsVowels = string => {
