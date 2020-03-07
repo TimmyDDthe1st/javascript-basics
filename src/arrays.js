@@ -14,7 +14,10 @@ const addToArray = (element, array) => {
   array.push(element);
 };
 
-const addToArray2 = (element, array) => {};
+const addToArray2 = (element, array) => {
+  const expectedArray = array.concat(element);
+  return expectedArray;
+};
 
 const removeNthElement = (index, array) => {
   array.splice(index, 1);
@@ -58,7 +61,7 @@ const sumNumbers = numbers => {
 };
 
 const sortByLastLetter = strings => {
-  strings.sort(
+  return strings.sort(
     (a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1)
   );
 };
